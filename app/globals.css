@@ -5,6 +5,7 @@
 }
 
 @theme {
+    --font-sans: var(--font-satoshi), system-ui, sans-serif;
     --text-small: 8px;
     --text-base: 16px;
     --text-medium: 18px;
