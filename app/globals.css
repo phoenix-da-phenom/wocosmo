@@ -1,0 +1,13 @@
+@import "tailwindcss";
+:root {
+    --primary-background-color: #000000;
+    --secondary-background-color: #F2F0F1;
+}
+
+@theme {
+    --text-small: 8px;
+    --text-base: 16px;
+    --text-medium: 18px;
+    --text-large: 24px;
+    --text-xl: 32px;
+}
