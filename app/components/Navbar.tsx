@@ -6,7 +6,7 @@ import { LuCircleUserRound } from "react-icons/lu";
 
 export default function Navbar() {
   return (
-    <div className="container mx-auto flex items-center justify-between py-4">
+    <div className="container mx-auto flex items-center gap-10 py-4">
 
       {/* LEFT: Logo */}
       <div>
@@ -39,7 +39,7 @@ export default function Navbar() {
       </div>
 
       {/* RIGHT: Icons */}
-      <div className="flex items-center gap-4 text-xl">
+      <div className="flex items-center gap-4 text-xl ml-auto">
         <HiOutlineShoppingCart className="cursor-pointer" />
         <LuCircleUserRound className="cursor-pointer" />
       </div>
