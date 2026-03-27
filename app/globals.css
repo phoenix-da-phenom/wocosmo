@@ -11,3 +11,20 @@
     --text-large: 24px;
     --text-xl: 32px;
 }
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+/* Make padding smaller on mobile */
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 16px;
+    }
+}
