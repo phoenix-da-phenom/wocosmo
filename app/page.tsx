@@ -6,6 +6,7 @@ import BrandBanner from "./components/BrandBanner";
 import NewArrival from "./components/NewArrial";
 import TopSells from "./components/Topsells";
 import BrowserBYLifeStyle from "./components/BrowserBYLifeStyle";
+import HappyCustomers from "./components/HappyCustomers";
 
 export default function Home() {
   return (
@@ -17,6 +18,11 @@ export default function Home() {
       <NewArrival/>
       <TopSells/>
       <BrowserBYLifeStyle/>
+       <div className="py-5">
+          <h1 className="font-bold py-2 text-center text-2xl">OUR HAPPY CUSTOMERS</h1>
+        </div>
+        <HappyCustomers/>
+       
  
     </div>
   );
