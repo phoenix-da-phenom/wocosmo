@@ -15,14 +15,14 @@ const data =[
 
 ]
 
-export default function NewArrival() {
+export default function TopSells() {
   return (
     <div className="container h-[80vh]">
       <div className="py-10">
-        <h1 className="text-center font-extrabold">NEW ARRIVAL</h1>
+        <h1 className="text-center font-extrabold">TOP SELLING</h1>
       </div>
       <div className="flex items-center gap-10 justify-center">
-        {data.slice(0,4).map((item) => (
+        {data.slice(3).map((item) => (
           <ItemContainer
             key={item.img}
             srcImage={item.img}
@@ -41,7 +41,7 @@ export default function NewArrival() {
             View All
           </button>
         </div>
-        <hr className="border border-gray-200"/>
+      
     </div>
   );
 }
