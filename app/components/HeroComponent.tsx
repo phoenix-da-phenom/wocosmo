@@ -1,17 +1,29 @@
 import Image from "next/image";
 import CompanyScore from "./CompanyScore";
-import Pic from "../assets/Rectangle 2.png";
+import Pic from "../assets/Rectangle 2.png"; // Keep your import
 
 export default function HeroComponent() {
   return (
-    <div className="bg-[var(--secondary-background-color)] py-15">
-      <div className="container">
-        <div className="flex">
-          <div>
+    <div  className="bg-[var(--secondary-background-color)] py-15">
+      <div
+        className="container min-h-[600px] relative"
+        
+      >
+        <div 
+        
+        
+        className="flex h-full items-center">
+          {" "}
+          {/* Better flex alignment */}
+          <div className="flex-1 z-10"
+          
+          >
+            {" "}
+            z-10 if you add overlay later
             <div>
               <h1 className="font-bold text-5xl">
                 FIND CLOTHES <br /> THAT MATCHES <br />
-                YOR STYLE
+                YOUR STYLE
               </h1>
             </div>
             <div className="py-5">
@@ -28,8 +40,17 @@ export default function HeroComponent() {
             </div>
             <CompanyScore />
           </div>
-          <div>
-            <Image src={Pic} width={100} height={45} alt="AD IMAGE" />
+          {/* Right side image - consider increasing size or using fill */}
+          <div className="flex-1 relative h-[500px]">
+            {" "}
+            {/* Adjust height as needed */}
+            <Image
+              src={Pic}
+              alt="Hero fashion image"
+              fill
+              className="object-cover border-7 "
+              priority // Good for hero images
+            />
           </div>
         </div>
       </div>
