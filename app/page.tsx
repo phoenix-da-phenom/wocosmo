@@ -7,6 +7,8 @@ import NewArrival from "./components/NewArrial";
 import TopSells from "./components/Topsells";
 import BrowserBYLifeStyle from "./components/BrowserBYLifeStyle";
 import HappyCustomers from "./components/HappyCustomers";
+import NewsLetter from "./components/NewsLetter";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
           <h1 className="font-bold py-2 text-center text-2xl">OUR HAPPY CUSTOMERS</h1>
         </div>
         <HappyCustomers/>
+        <NewsLetter/>
+        <Footer/>
        
  
     </div>

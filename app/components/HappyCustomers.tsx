@@ -27,12 +27,12 @@ const data = [
 ];
 export default function HappyCustomers() {
   return (
-    <div className=" ">
-      <div className="container flex gap-3">
+    <div className="mb-20 ">
+      <div className="container flex gap-3 ">
         {
           data.map((item, index)=>(
-            <div className="flex border border-gray-300 rounded-2xl p-5">
-            <div key={index}>
+            <div key={index} className="flex border border-gray-300 rounded-2xl p-5">
+            <div> 
               <div>
                 <Image src={Stars} alt="" />
               </div>
