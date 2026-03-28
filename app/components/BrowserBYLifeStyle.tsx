@@ -4,7 +4,7 @@ import Gym from "../assets/gym.png";
 import Party from "../assets/party.png";
 import Formal from "../assets/formal.png";
 
-export default function BrowserBYLifeStyle() {
+export default function BrowseByLifeStyle() {
   return (
     <div>
       <div className="container bg-[var(--secondary-background-color)] rounded-2xl p-6">
@@ -12,25 +12,33 @@ export default function BrowserBYLifeStyle() {
           BROWSE BY DRESS STYLE
         </h1>
 
-        <div className="grid grid-cols-2 gap-4">
-          {/* Casual (normal) */}
+        <div className="grid grid-cols-2 gap-4 max-w-[780px] mx-auto">
+          {/* Left Column - 3 images (taller column) */}
+          <div className="flex flex-col gap-4">
+            <Image
+              src={casual}
+              alt="casual"
+              className="w-full h-[260px] object-cover rounded-xl"
+            />
+            <Image
+              src={Party}
+              alt="party"
+              className="w-full h-[260px] object-cover rounded-xl"
+            />
+            <Image
+              src={Formal}
+              alt="formal"
+              className="w-full h-[260px] object-cover rounded-xl"
+            />
+          </div>
+
+          {/* Right Column - 1 taller image */}
           <div>
-            <Image src={casual} alt="casual" className="w-full h-auto rounded-xl" />
-          </div>
-
-          {/* Gym (span 2 columns = wider) */}
-          <div className="col-span-1">
-            <Image src={Gym} alt="gym" className="w-full h-auto rounded-xl" />
-          </div>
-
-          {/* Party (span 2 columns) */}
-          <div className="col-span-1">
-            <Image src={Party} alt="party" className="w-full h-auto rounded-xl" />
-          </div>
-
-          {/* Formal (normal) */}
-          <div>
-            <Image src={Formal} alt="formal" className="w-full h-auto rounded-xl" />
+            <Image
+              src={Gym}
+              alt="gym"
+              className="w-full h-[800px] object-cover rounded-xl"
+            />
           </div>
         </div>
       </div>
