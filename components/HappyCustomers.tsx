@@ -1,68 +1,67 @@
+"use client";
+
 import React from "react";
 import Stars from "../app/assets/statrs.png";
 import Image from "next/image";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
+// Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
 const data = [
   {
     customerName: "Sarah M",
     review:
-      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+      "I'm blown away by the quality and style of the clothes I ...",
   },
   {
-    customerName: "Sarah M",
+    customerName: "John D",
     review:
-      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+      "Amazing experience! The fit and quality are just perfect...",
   },
   {
-    customerName: "Sarah M",
+    customerName: "Emma L",
     review:
-      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+      "Highly recommend! Everything feels premium and stylish...",
   },
   {
-    customerName: "Sarah M",
+    customerName: "Mike R",
     review:
-      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+      "Customer service and delivery were top-notch!",
   },
 ];
+
 export default function HappyCustomers() {
   return (
-    <div className="mb-20 ">
-      <div className="container flex gap-3 ">
-        {
-          data.map((item, index)=>(
-            <div key={index} className="flex border border-gray-300 rounded-2xl p-5">
-            <div> 
-              <div>
-                <Image src={Stars} alt="" />
-              </div>
-              <div className="flex gap-3 items-center">
-                {item.customerName}
-                <IoIosCheckmarkCircle color="green" size="34" />
-              </div>
+    <div className="mb-20">
+      <div className="container">
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {data.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="border border-gray-300 rounded-2xl p-5 h-full">
+                <Image src={Stars} alt="stars" />
 
-              <div>
-                <p className="w-100 text-justify">
+                <div className="flex gap-2 items-center mt-2">
+                  <span className="font-semibold">{item.customerName}</span>
+                  <IoIosCheckmarkCircle color="green" size="20" />
+                </div>
+
+                <p className="mt-3 text-sm text-gray-600">
                   {item.review}
                 </p>
               </div>
-            </div>
-          </div>
-          ))
-
-
-
-        }
-
-
-
-
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      
-
-
-        
-      </div>
-  
+    </div>
   );
 }

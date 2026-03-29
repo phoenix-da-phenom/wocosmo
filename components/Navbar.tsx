@@ -14,7 +14,7 @@ export default function Navbar() {
       </div>
 
       {/* MIDDLE: Nav + Search */}
-      <div className="flex items-center gap-6">
+      <div className="hidden md:flex items-center gap-6">
         
         {/* Navigation */}
         <ul className="flex items-center gap-8 text-[var(--text-large)]">

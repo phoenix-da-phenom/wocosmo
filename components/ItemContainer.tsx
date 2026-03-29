@@ -10,7 +10,7 @@ export default function ItemContainer({
 }: typeContainer) {
   return (
     <div>
-      <div className="relative w-[200px] h-[200px]">
+      <div className="relative  w-[150px] h-[200px]">
         <Image src={srcImage} alt="clothes" fill className="object-cover" />
       </div>
       <div>

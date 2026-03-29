@@ -7,61 +7,72 @@ import Formal from "../app/assets/formal.png";
 export default function BrowseByLifeStyle() {
   return (
     <div className="pb-20">
-      <div className="container bg-[var(--secondary-background-color)] rounded-2xl p-6">
-        <h1 className="font-extrabold text-2xl text-center py-10">
+      <div className="container mx-auto px-4 bg-[var(--secondary-background-color)] rounded-2xl p-6">
+
+        {/* Title */}
+        <h1 className="font-extrabold text-xl sm:text-2xl text-center py-8 sm:py-10">
           BROWSE BY DRESS STYLE
         </h1>
 
-        <div className="grid grid-cols-2 gap-4 max-w-[780px] mx-auto">
-          {/* Left Column - 3 images (taller column) */}
-          <div className="flex flex-col gap-4">
-            <div className="relative">
-              <p className="text-3xl font-extrabold absolute top-5 left-5">
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
+
+          {/* LEFT COLUMN */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4">
+
+            {/* Casual */}
+            <div className="relative overflow-hidden rounded-xl">
+              <p className="text-xl sm:text-2xl font-extrabold absolute top-4 left-4 z-10 text-white">
                 Casual
               </p>
               <Image
                 src={casual}
                 alt="casual"
-                className="w-full h-[260px] object-cover rounded-xl"
+                className="w-full h-[180px] sm:h-[220px] md:h-[260px] object-cover"
               />
             </div>
-            <div className="relative">
-              <p className="text-3xl font-extrabold absolute top-5 left-5">
+
+            {/* Party */}
+            <div className="relative overflow-hidden rounded-xl">
+              <p className="text-xl sm:text-2xl font-extrabold absolute top-4 left-4 z-10 text-white">
                 Party
               </p>
-
               <Image
                 src={Party}
                 alt="party"
-                className="w-full h-[260px] object-cover rounded-xl"
+                className="w-full h-[180px] sm:h-[220px] md:h-[260px] object-cover"
               />
             </div>
-            <div className="relative">
-              <p className="text-3xl font-extrabold absolute top-5 left-5">
+
+            {/* Formal */}
+            <div className="relative overflow-hidden rounded-xl">
+              <p className="text-xl sm:text-2xl font-extrabold absolute top-4 left-4 z-10 text-white">
                 Formal
               </p>
               <Image
                 src={Formal}
                 alt="formal"
-                className="w-full h-[260px] object-cover rounded-xl"
+                className="w-full h-[180px] sm:h-[220px] md:h-[260px] object-cover"
               />
             </div>
+
           </div>
 
-          {/* Right Column - 1 taller image */}
-          <div>
-            <div className="relative pb-19">
-              <p className="text-3xl font-extrabold absolute top-5 left-5">
-                Gym
-              </p>
-              <Image
-                src={Gym}
-                alt="gym"
-                className="w-full h-[800px] object-cover rounded-xl"
-              />
-            </div>
+          {/* RIGHT COLUMN */}
+          <div className="relative overflow-hidden rounded-xl">
+            <p className="text-xl sm:text-2xl font-extrabold absolute top-4 left-4 z-10 text-white">
+              Gym
+            </p>
+
+            <Image
+              src={Gym}
+              alt="gym"
+              className="w-full h-[250px] sm:h-[350px] md:h-full object-cover"
+            />
           </div>
+
         </div>
+
       </div>
     </div>
   );

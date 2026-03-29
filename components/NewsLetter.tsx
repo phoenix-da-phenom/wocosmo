@@ -1,28 +1,42 @@
 export default function NewsLetter() {
   return (
-    <div className="relative">
+    <div className="px-4 sm:px-6 lg:px-0 py-10">
+      
+      <div className="container mx-auto">
+        
+        {/* Card */}
+        <div className="bg-black text-white rounded-3xl p-6 sm:p-10">
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 
-    <div className="absolute -top-15 right-35">
-      <div className="flex justify-center">
-        <div className="bg-black flex flex-col gap-2 text-white py-10 w-[1200px] rounded-3xl">
-          <div className=" container flex justify-around">
-            <h1 className="text-2xl font-bold">STAY UP TO DATE ABOUT </h1>
-            <input
-              type="text"
-              placeholder="Enter your email"
-              name="newsletter"
-              className="-ml-10 text-gray-700 bg-[var(--secondary-background-color)]  w-full)] px-3 py-1 rounded-2xl"
-            />
+            {/* LEFT TEXT */}
+            <div>
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+                STAY UP TO DATE ABOUT OUR LATEST OFFERS
+              </h1>
+            </div>
+
+            {/* RIGHT INPUT + BUTTON */}
+            <div className="flex flex-col gap-3">
+
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="newsletter"
+                className="w-full px-4 py-3 rounded-2xl text-gray-700 bg-white focus:outline-none"
+              />
+
+              <button className="w-full px-4 py-3 rounded-2xl bg-white text-black font-semibold hover:bg-gray-200 transition">
+                Subscribe to Newsletter
+              </button>
+
+            </div>
+
           </div>
 
-          <div className="container flex justify-around gap-3">
-            <h1 className="text-2xl font-bold">OUR LATEST OFFERS</h1>
-            <button className="text-gray-700 bg-[var(--secondary-background-color)] w-[full])] px-3 py-1 rounded-2xl cursor-pointer">Subscribe to Newsletter</button>
-          </div>
         </div>
+
       </div>
-    </div>
     </div>
   );
 }
