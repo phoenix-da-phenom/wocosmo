@@ -1,5 +1,5 @@
 import React from "react";
-import Stars from "../assets/statrs.png";
+import Stars from "../app/assets/statrs.png";
 import Image from "next/image";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 

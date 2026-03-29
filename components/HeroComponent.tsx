@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CompanyScore from "./CompanyScore";
-import Pic from "../assets/Rectangle 2.png"; 
+import Pic from "../app/assets/Rectangle 2.png"; 
 
 
 

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Calvin from '../assets/calvin.png'
-import Zara from "../assets/zara.png"
-import  Gucci from '../assets/gucci.png'
-import Prada from '../assets/prada.png'
-import Versace from "../assets/Versace.png"
+import Calvin from '../app/assets/calvin.png'
+import Zara from "../app/assets/zara.png"
+import  Gucci from '../app/assets/gucci.png'
+import Prada from '../app/assets/prada.png'
+import Versace from "../app/assets/Versace.png"
 export default function BrandBanner() {
   return (
     <div className="bg-black -mt-1 pb-2 ">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Stars from "../assets/statrs.png";
+import Stars from "../app/assets/statrs.png";
 import { typeContainer } from "../utils/AppType";
 
 export default function ItemContainer({

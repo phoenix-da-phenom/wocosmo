@@ -1,8 +1,8 @@
 import Image from "next/image";
-import casual from "../assets/casual.png";
-import Gym from "../assets/gym.png";
-import Party from "../assets/party.png";
-import Formal from "../assets/formal.png";
+import casual from "../app/assets/casual.png";
+import Gym from "../app/assets/gym.png";
+import Party from "../app/assets/party.png";
+import Formal from "../app/assets/formal.png";
 
 export default function BrowseByLifeStyle() {
   return (

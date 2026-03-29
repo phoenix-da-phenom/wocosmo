@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../assets/logo.png";
+import Logo from "../app/assets/logo.png";
 import { FiSearch } from "react-icons/fi";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { LuCircleUserRound } from "react-icons/lu";
