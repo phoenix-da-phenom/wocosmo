@@ -1,6 +1,9 @@
 import { StaticImageData } from "next/image";
+import { MouseEventHandler } from "react";
 export  type typeContainer={
-    srcImage : string| StaticImageData;
+    key: number
+    srcImage : string;
     description : string;
     price: number;
+    hndClick?: MouseEventHandler<HTMLDivElement>;
 }
