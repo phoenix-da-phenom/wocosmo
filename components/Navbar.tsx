@@ -15,7 +15,7 @@ export default function Navbar() {
 
 
   return (
-      <div className="sticky top-5 left-0 w-full z-50 bg-white shadow-sm">
+      <div className="sticky top-6 left-0 w-full z-50 bg-white shadow-sm">
     <div className="container mx-auto flex items-center gap-10 py-4 border-b border-b-gray-300">
 
       {/* LEFT: Logo */}
