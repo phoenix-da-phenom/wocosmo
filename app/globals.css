@@ -2,15 +2,22 @@
 :root {
     --primary-background-color: #000000;
     --secondary-background-color: #F2F0F1;
+    --font-satoshi: var(--font-satoshi);
+    --font-integralcf: var(--font-integralcf);
 }
 
 @theme {
-    --font-sans: var(--font-satoshi), system-ui, sans-serif;
+    /* --font-sans: var(--font-satoshi), system-ui, sans-serif; */
+    /* --font-custom: var(--font-integralcf), system-ui, sans-serif; */
     --text-small: 8px;
     --text-base: 16px;
     --text-medium: 18px;
     --text-large: 24px;
     --text-xl: 32px;
+}
+
+.font-integral {
+    font-family: var(--font-integralcf), system-ui, sans-serif;
 }
 
 .container {

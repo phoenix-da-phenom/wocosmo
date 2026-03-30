@@ -5,7 +5,7 @@ import { PiGreaterThanThin } from "react-icons/pi";
 
 export default function Breadcrums() {
   return (
-    <div className="text-[12px]">
+    <div className="my-10 text-[12px]">
       <div className="container">
         <ul className="flex items-center gap-3 text-gray-700 font-semibold">
           <li className="flex items-center gap-2">

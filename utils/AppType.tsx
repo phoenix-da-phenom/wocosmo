@@ -7,3 +7,8 @@ export  type typeContainer={
     price: number;
     hndClick?: MouseEventHandler<HTMLDivElement>;
 }
+
+export type offBadgeProps={
+    text: string;
+    color: string
+}

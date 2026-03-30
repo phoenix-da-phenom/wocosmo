@@ -19,6 +19,20 @@ const satoshi = localFont({
   preload: true,
 });
 
+const integralcf = localFont({
+  src:[
+    {
+      path:'./assets/fonts/integralcf.woff',
+      weight: '100 900',
+      style:'bold'
+    }
+  ],
+  variable:'--font-integralcf',
+  display:'swap',
+  preload:true
+
+})
+
 export const metadata ={
   title:{
     default:"Wocosmo",
@@ -29,7 +43,7 @@ export const metadata ={
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={satoshi.variable}>
+  <html lang="en" className={`${satoshi.variable} ${integralcf.variable}`}>
       <body>{children}</body>
     </html>
   );
