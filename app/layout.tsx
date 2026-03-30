@@ -19,6 +19,14 @@ const satoshi = localFont({
   preload: true,
 });
 
+export const metadata ={
+  title:{
+    default:"Wocosmo",
+    template:"%s | Wocosmo"
+  },
+  description: "All Things, One Place"
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={satoshi.variable}>

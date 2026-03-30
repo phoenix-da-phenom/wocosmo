@@ -1,10 +1,14 @@
+
 import Image from "next/image";
 import Logo from "../app/assets/logo.png";
 import { FiSearch } from "react-icons/fi";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { LuCircleUserRound } from "react-icons/lu";
 
+
 export default function Navbar() {
+
+
   return (
     <div className="container mx-auto flex items-center gap-10 py-4">
 
