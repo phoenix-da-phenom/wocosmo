@@ -38,7 +38,21 @@ export const metadata ={
     default:"Wocosmo",
     template:"%s | Wocosmo"
   },
-  description: "All Things, One Place"
+  description: "All Things, One Place",
+  icons:{
+    icon:[
+      {
+        url:"/favicon.ico",
+        type:"image/x-icon"
+      },
+      {
+        url:'/favicon_back_up.png',
+        type:"image/png",
+      }
+      
+    ]
+  }
+  
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
