@@ -1,6 +1,7 @@
 import BlackBanner from "@/components/BlackBanner";
 import Breadcrums from "@/components/Breadcrums";
 import ClothDetail from "@/components/ClothDetail";
+import SelectColor from "@/components/SelectColor"
 import Navbar from "@/components/Navbar";
 import React from "react";
 
@@ -14,6 +15,7 @@ export default function page({ params }: { params: { id: string } }) {
 
       <div>
         <ClothDetail/>
+        
 
       </div>
 

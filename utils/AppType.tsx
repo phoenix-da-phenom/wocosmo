@@ -12,3 +12,7 @@ export type offBadgeProps={
     text: string;
     color: string
 }
+export type sizeBadgeProps={
+    text:string;
+    color:string;
+}

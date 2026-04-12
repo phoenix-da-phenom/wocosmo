@@ -6,6 +6,9 @@ import Pic3 from "../app/assets/img1.png";
 import PicLarge from "../app/assets/img_Large.png";
 import Stars from "../app/assets/Frame 11.png";
 import OffBadge from "./OffBadge";
+import SelectColor from "./SelectColor";
+import ChooseSize from "./ChooseSize";
+import AddCartController from "./AddCartController";
 
 export default function ClothDetail() {
   return (
@@ -67,6 +70,9 @@ export default function ClothDetail() {
               tenetur, soluta dignissimos ex nemo amet assumenda ullam officia...
             </p>
           </div>
+          <SelectColor/>
+          <ChooseSize/>
+          <AddCartController/>
         </div>
 
       </div>
