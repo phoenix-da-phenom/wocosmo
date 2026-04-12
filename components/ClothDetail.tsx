@@ -14,24 +14,7 @@ export default function ClothDetail() {
   return (
     <div>
       <div className="container my-12 flex flex-col lg:flex-row gap-10">
-        
-        {/* LEFT IMAGE SECTION */}
-        <div className="flex gap-5">
-          
-          {/* THUMBNAILS */}
-          <div className="flex flex-col gap-4">
-            {[Pic1, Pic2, Pic3].map((pic, i) => (
-              <div key={i} className="w-[80px] h-[80px] relative rounded-lg overflow-hidden border">
-                <Image
-                  src={pic}
-                  alt={`thumb-${i}`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-
+        <div className="flex flex-col sm:flex-row gap-4">
           {/* MAIN IMAGE */}
           <div className="relative w-[300px] h-[400px] sm:w-[400px] sm:h-[500px] rounded-xl overflow-hidden">
             <Image
@@ -42,11 +25,27 @@ export default function ClothDetail() {
             />
           </div>
 
+          {/* THUMBNAILS */}
+          <div className="flex sm:flex-col gap-4 justify-center">
+            {[Pic1, Pic2, Pic3].map((pic, i) => (
+              <div
+                key={i}
+                className="w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] relative rounded-lg overflow-hidden border"
+              >
+                <Image
+                  src={pic}
+                  alt={`thumb-${i}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* RIGHT DETAILS SECTION */}
         <div className="px-2 lg:px-6 max-w-xl">
-          <h1 className="text-3xl lg:text-4xl font-extrabold font-integral">
+          <h1 className="text-lg lg:text-4xl font-extrabold font-integral">
             ONE LIFE GRAPHIC T-SHIRT
           </h1>
 
@@ -67,14 +66,14 @@ export default function ClothDetail() {
           <div className="mt-4">
             <p className="text-gray-600 leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              tenetur, soluta dignissimos ex nemo amet assumenda ullam officia...
+              tenetur, soluta dignissimos ex nemo amet assumenda ullam
+              officia...
             </p>
           </div>
-          <SelectColor/>
-          <ChooseSize/>
-          <AddCartController/>
+          <SelectColor />
+          <ChooseSize />
+          <AddCartController />
         </div>
-
       </div>
     </div>
   );

@@ -11,15 +11,23 @@ const colorMap: Record<string, string> = {
 };
 
 export default function SizeBadge({ text, color }: sizeBadgeProps) {
-  let textColor = "";
-  if (color === "black") {
-    textColor = "text-white";
-  } else {
-    textColor = "text-black";
-  }
+  const textColor = color === "black" ? "text-white" : "text-black";
+
   return (
     <div
-      className={`flex items-center justify-center py-2 px-4 ${textColor} ${colorMap[color]} w-25 rounded-full`}
+      className={`
+        flex items-center justify-center rounded-full
+        ${textColor} ${colorMap[color]}
+        
+        /* Mobile (default) */
+        text-xs py-1 px-3 min-w-[50px]
+        
+        /* Small screens and up */
+        sm:text-sm sm:py-2 sm:px-4 sm:min-w-[70px]
+        
+        /* Larger screens */
+        md:text-base md:px-5 md:min-w-[90px]
+      `}
     >
       {text}
     </div>

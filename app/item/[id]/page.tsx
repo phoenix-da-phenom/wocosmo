@@ -1,24 +1,33 @@
 import BlackBanner from "@/components/BlackBanner";
 import Breadcrums from "@/components/Breadcrums";
 import ClothDetail from "@/components/ClothDetail";
-import SelectColor from "@/components/SelectColor"
+import SelectColor from "@/components/SelectColor";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import ProductTabs from "@/components/ProductTab";
+import ThingsYouMayLike from "@/components/ThingsYouMayLike";
+import NewsLetter from "@/components/NewsLetter";
+import Footer from "@/components/Footer";
 
 export default function page({ params }: { params: { id: string } }) {
   return (
     <>
-    <div>{params.id}</div>
+      <div>{params.id}</div>
       <BlackBanner />
       <Navbar />
-      <Breadcrums/>
+      <Breadcrums />
 
       <div>
-        <ClothDetail/>
-        
+        <ClothDetail />
+        <ProductTabs />
+      </div>
+      <div className="container">
+        <h1 className="text-2xl md:text-4xl break-words my-5 pb-5 font-bold text-center">You might also like</h1>
+        <ThingsYouMayLike/>
+      <NewsLetter/>  
 
       </div>
-
+      <Footer/>
     </>
   );
 }
