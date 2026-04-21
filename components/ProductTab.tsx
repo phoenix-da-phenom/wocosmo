@@ -3,6 +3,7 @@
 import { useState } from "react";
 import TestimonialRating from "./TestimonialRating";
 import CustomButton from "./CustomButton";
+import ReviewComponent from "./ReviewComponent";
 
 type TabId = "details" | "reviews" | "faqs";
 
@@ -36,9 +37,13 @@ export default function ProductTabs() {
       case "reviews":
         return (
           <div className="p-4 text-gray-600">
-            <h2 className="text-lg font-semibold mb-2">
-              All Reviews <span className="text-sm">(451)</span>
-            </h2>
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg font-semibold mb-2">
+                All Reviews <span className="text-sm">(451)</span>
+              </h2>
+              <ReviewComponent />
+            </div>
+
             <div className="grid grid-cols-1 lg:grid-cols-2 p-4 gap-5">
               <TestimonialRating />
               <TestimonialRating />
@@ -86,8 +91,7 @@ export default function ProductTabs() {
       {/* Tabs Content */}
       <div className="container">{renderContent()}</div>
       <div className="my-5 flex justify-center">
-        <CustomButton text="Load More Reviews"/>
-       
+        <CustomButton text="Load More Reviews" />
       </div>
     </div>
   );

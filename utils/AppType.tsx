@@ -9,6 +9,9 @@ export  type typeContainer={
     hndClick?: MouseEventHandler<HTMLDivElement>;
 }
 
+export type crumsProps={
+    crums:string []
+}
 export type offBadgeProps={
     text: string;
     color: string
