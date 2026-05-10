@@ -9,7 +9,7 @@ export default function ReviewComponent() {
         <div className='w-[48px] h-[48px] rounded-full p-4 bg-gray-200'>
             <Image src={Filter} width={24} height={24} alt="filter"/>
         </div>
-        <div className='flex items-center gap-3 bg-gray-200 p-3 px-4 rounded-4xl'>
+        <div className='hidden lg:flex items-center gap-3 bg-gray-200 p-3 px-4 rounded-4xl'>
             <span>Latest</span>
             <span><RxCaretDown /></span>
 
