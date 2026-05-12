@@ -14,8 +14,8 @@ export default function HeroComponent() {
           <div className="z-10">
 
             <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight">
-              FIND CLOTHES <br />
-              THAT MATCHES <br />
+              BUY NOW <br />
+              PAY LATER <br />
               YOUR STYLE
             </h1>
 

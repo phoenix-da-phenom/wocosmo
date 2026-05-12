@@ -5,7 +5,7 @@ import { FiSearch } from "react-icons/fi";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { LuCircleUserRound } from "react-icons/lu";
  import { useRouter } from "next/navigation";
-
+import { CiMenuFries } from "react-icons/ci";
 
 export default function Navbar() {
   const router = useRouter();
@@ -49,7 +49,12 @@ export default function Navbar() {
       </div>
 
       {/* RIGHT: Icons */}
+     
       <div className="flex items-center gap-4 text-xl ml-auto">
+         <div>
+       <CiMenuFries />
+
+      </div>
         <HiOutlineShoppingCart className="cursor-pointer" />
         <LuCircleUserRound className="cursor-pointer" />
       </div>
